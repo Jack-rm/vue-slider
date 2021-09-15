@@ -36,7 +36,7 @@ h1{
 
 .nav {
     position: absolute;
-    bottom: 25px;
+    bottom: -50px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -53,3 +53,6 @@ h1{
     color: lightslategray;
 }
 
+.my_wizard-section {
+    position: relative;
+}
