@@ -21,10 +21,10 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container mb-3 mt-3">
             <div class="row">
-                <div class="col-12">
-                    <h1> My Special Slider </h1>
+                <div class="col-12 text-center">
+                    <h1> Greatest Wizards of All Time </h1>
                 </div>
             </div>
         </div>
@@ -32,20 +32,25 @@
 
     <main>
         <section>
-            <div id="root" class="container">
+            <div id="root" class="container dflex">
                 <div class="row">
                     <div class="col-12">
-                        <div class="wrapper">
+                        <div class="my_wrapper d-flex ">
                           
-                            <div class="my_img-before">
-
+                            <div class="my_img-before fs-5 d-flex justify-content-center align-items-center">
+                                <i class="fas fa-chevron-left" @click="beforeImg()"></i>
                             </div>
                           
                             <div class="my_img-slider">
-
+                                <img :src="images[imageIndex].source" :alt="images[imageIndex].alt">
                             </div>
 
-                            <div class="my_img-after">
+                            <div class="my_img-after fs-5 d-flex justify-content-center align-items-center">
+                                <i class="fas fa-chevron-right" @click="nextImg()"></i>
+                            </div>
+
+                            <div class="nav">
+                                <i class="fas fa-circle fs-5 ps-2" :class="(index == imageIndex) ? 'active' : ''" v-for="(image,index) in images"></i>
 
                             </div>
 

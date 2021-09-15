@@ -1,0 +1,55 @@
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.my_wrapper{
+    width: 1000px;
+    height: 650px;
+    margin: auto;
+}
+
+.my_img-slider{
+    width: calc(100% - 120px);
+    height: 100%;
+    background-color: crimson;
+}
+
+.my_img-before,
+.my_img-after{
+    width: 60px;
+    height: 100%;
+    color: rgba(0,0,0,.8);
+}
+
+.my_img-before:hover,
+.my_img-after:hover{
+    color: rgba(0,0,0,.3);
+}
+
+.my_img-slider img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid black;
+}
+
+.nav {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav i{
+    color: rgba(0,0,0,.8);
+}
+
+.nav i:hover{
+    color: rgba(0,0,0,.3);
+}
+
+.nav i.active{
+    color: lightslategray;
+}
+
