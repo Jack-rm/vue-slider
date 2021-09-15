@@ -50,7 +50,7 @@
                             </div>
 
                             <div class="nav">
-                                <i class="fas fa-circle fs-5 ps-2" :class="(index == imageIndex) ? 'active' : ''" v-for="(image,index) in images" @click="setImg()"></i>
+                                <i class="fas fa-circle fs-5 ps-2" :class="(index == imageIndex) ? 'active' : ''" v-for="(image,index) in images" @click="setImg(index)"></i>
 
                             </div>
 
