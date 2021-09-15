@@ -43,11 +43,11 @@ let root = new Vue(
             imageIndex: 0,
         },
         methods: {
-            beforeImg: function(){
+            beforeImg: function(){  
                 this.imageIndex--;
                 // console.log(this.imageIndex);
                 if(this.imageIndex < 0){
-                    this.imageIndex = this.images.length;
+                    this.imageIndex = this.images.length -1;
                 }
             },
 
@@ -58,6 +58,10 @@ let root = new Vue(
                     this.imageIndex = 0;
                 }
             },
+
+            setImg: function(imageIndex){
+                this.imageIndex = imageIndex;
+            }
         }
     }
 );
